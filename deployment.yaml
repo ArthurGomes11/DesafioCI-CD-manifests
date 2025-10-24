@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: desafioci-cd 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: desafioci-cd 
+  template:
+    metadata:
+      labels:
+        app: desafioci-cd 
+    spec:
+      containers:
+      - name: desafioci-cd 
+        image: arthurhlmgomes/desafioci-cd:latest
+        ports:
+        - containerPort: 8000
