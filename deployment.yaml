@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: desafioci-cd 
-        image: arthurhlmgomes/desafioci-cd:latest
+        image: arthurhlmgomes/desafioci-cd:27fefed
         ports:
         - containerPort: 8000
